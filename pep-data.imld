@@ -10,6 +10,9 @@
       <excludeFolder url="file://$MODULE_DIR$/src/wield_services.egg-info" />
       <excludeFolder url="file://$MODULE_DIR$/src/wield_services/image/py_wielder/Wielder" />
       <excludeFolder url="file://$MODULE_DIR$/src/cicd/cicd/image/cicd" />
+      <excludeFolder url="file://$MODULE_DIR$/src/jupyter/Downloads" />
+      <excludeFolder url="file://$MODULE_DIR$/src/pep_data.egg-info" />
+      <excludeFolder url="file://$MODULE_DIR$/src/jupyter/.ipynb_checkpoints" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10 (dud)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
