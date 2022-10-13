@@ -21,4 +21,6 @@
 
 */dev/*
 *.csv
-*/.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*/Downloads/*
+
