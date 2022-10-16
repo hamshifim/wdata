@@ -23,4 +23,5 @@
 *.csv
 */.ipynb_checkpoints/*
 */Downloads/*
+*/jupyter/dev*
 
