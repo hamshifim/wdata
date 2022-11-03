@@ -7,7 +7,7 @@ from wielder.util.hocon_util import resolve_ordered
 from wielder.wield.project import get_super_project_roots
 
 
-def get_project_conf():
+def quick_conf():
 
     staging_root, super_project_root, project_name = get_super_project_roots()
     project_conf = f'{super_project_root}/pep-data/src/conf/project.conf'
