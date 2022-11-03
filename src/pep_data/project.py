@@ -9,12 +9,13 @@ from wielder.wield.project import get_super_project_roots
 
 def get_project_conf():
 
-    _, project_root, _ = get_super_project_roots()
-    project_conf = f'{project_root}/pep-data/src/conf/project.conf'
+    staging_root, super_project_root, project_name = get_super_project_roots()
+    project_conf = f'{super_project_root}/pep-data/src/conf/project.conf'
 
     ordered_project_files = [project_conf]
 
     injection = {
+        "staging_root": staging_root,
         "moto": "who dares, wins!"
     }
 
