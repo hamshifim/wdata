@@ -4,11 +4,13 @@ Author: Gideon Bar
 """
 
 from wielder.util.hocon_util import resolve_ordered
+from wielder.wield.project import get_super_project_roots
 
 
 def get_project_conf():
 
-    project_conf = '../conf/project.conf'
+    _, project_root, _ = get_super_project_roots()
+    project_conf = f'{project_root}/pep-data/src/conf/project.conf'
 
     ordered_project_files = [project_conf]
 
