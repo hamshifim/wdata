@@ -15,8 +15,10 @@ def get_project_conf():
     ordered_project_files = [project_conf]
 
     injection = {
+        "moto": "Who dares, wins!",
         "staging_root": staging_root,
-        "moto": "who dares, wins!"
+        "super_project_root": super_project_root,
+        "project_name": project_name,
     }
 
     conf = resolve_ordered(
