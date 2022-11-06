@@ -1,0 +1,131 @@
+﻿{
+ "paragraphs": [
+  {
+   "text": "import com.pepticom.wielder.wild.{FsUtil, SparkContextInitializer}\nimport com.typesafe.config.Config\nimport org.apache.spark.sql.{DataFrame, SparkSession}",
+   "user": "anonymous",
+   "dateUpdated": "2022-11-03T10:42:10+0000",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "import com.pepticom.wielder.wild.{FsUtil, SparkContextInitializer}\nimport com.typesafe.config.Config\nimport org.apache.spark.sql.{DataFrame, SparkSession}\n"
+     }
+    ]
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1667472130950_971874660",
+   "id": "paragraph_1667472130950_971874660",
+   "dateCreated": "2022-11-03T10:42:10+0000",
+   "dateStarted": "2022-11-03T10:42:10+0000",
+   "dateFinished": "2022-11-03T10:42:11+0000",
+   "status": "FINISHED"
+  },
+  {
+   "text": "import org.apache.spark.sql.SparkSession\nval spark = SparkSession.builder.config(sc.getConf).getOrCreate()\n\nval a = 90\n\n",
+   "user": "anonymous",
+   "dateUpdated": "2022-11-03T09:46:26+0000",
+   "progress": 0.0,
+   "config": {
+    "tableHide": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12.0,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9.0,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {
+     "bdtMeta": {
+      "inlay": {
+       "collapsed": true
+      }
+     }
+    },
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1667468786703_405025703",
+   "id": "paragraph_1667468786703_405025703",
+   "dateCreated": "2022-11-03T09:46:26+0000",
+   "dateStarted": "2022-11-03T09:46:26+0000",
+   "dateFinished": "2022-11-03T09:46:54+0000",
+   "status": "FINISHED"
+  },
+  {
+   "text": "%sh /dev/peps/package_py.bash\n# TODO Makwe python work this works but does not impact the default conda interpreter.\n\n",
+   "user": "anonymous",
+   "dateUpdated": "2022-11-03T09:46:26+0000",
+   "progress": 0.0,
+   "config": {
+    "tableHide": true
+   },
+   "settings": {
+    "params": {
+     "bdtMeta": {
+      "inlay": {
+       "collapsed": true
+      }
+     }
+    },
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1667468786802_1820052493",
+   "id": "paragraph_1667468786802_1820052493",
+   "dateCreated": "2022-11-03T09:46:26+0000",
+   "dateStarted": "2022-11-03T09:46:26+0000",
+   "dateFinished": "2022-11-03T09:47:03+0000",
+   "status": "ABORT"
+  },
+  {
+   "text": "%python\nimport sys\nfor p in sys.path:\n    print(p)",
+   "user": "anonymous",
+   "dateUpdated": "2022-11-03T09:46:26+0000",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1667468786853_312304232",
+   "id": "paragraph_1667468786853_312304232",
+   "dateCreated": "2022-11-03T09:46:26+0000",
+   "dateStarted": "2022-11-03T09:46:26+0000",
+   "dateFinished": "2022-11-03T09:46:34+0000",
+   "status": "FINISHED"
+  }
+ ],
+ "name": "Zeppelin Notebook",
+ "id": "",
+ "noteParams": {},
+ "noteForms": {},
+ "angularObjects": {},
+ "config": {
+  "isZeppelinNotebookCronEnable": false,
+  "looknfeel": "default",
+  "personalizedMode": "false"
+ },
+ "info": {}
+}
