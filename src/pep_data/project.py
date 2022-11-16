@@ -4,7 +4,17 @@ Author: Gideon Bar
 """
 
 from wielder.util.hocon_util import resolve_ordered
-from wielder.wield.project import get_super_project_roots
+from wielder.wield.project import get_super_project_roots, get_super_project_wield_conf
+
+
+def project_conf():
+
+    conf_path = '/Users/gideonbar/dev/data/pep-data/conf'
+    conf = get_super_project_wield_conf(
+        project_conf_root=conf_path
+    )
+
+    return conf
 
 
 def quick_conf():
