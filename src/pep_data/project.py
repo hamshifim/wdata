@@ -11,7 +11,8 @@ def project_conf():
 
     conf_path = '/Users/gideonbar/dev/data/pep-data/conf'
     conf = get_super_project_wield_conf(
-        project_conf_root=conf_path
+        project_conf_root=conf_path,
+        call_from_jupyter=True
     )
 
     return conf
