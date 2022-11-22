@@ -9,7 +9,9 @@ from wielder.wield.project import get_super_project_roots, get_super_project_wie
 
 def project_conf():
 
-    conf_path = '/Users/gideonbar/dev/data/pep-data/conf'
+    staging_root, super_project_root, project_name = get_super_project_roots()
+    conf_path = f'{super_project_root}/pep-data/conf'
+
     conf = get_super_project_wield_conf(
         project_conf_root=conf_path,
         call_from_jupyter=True
