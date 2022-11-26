@@ -2,7 +2,7 @@
 """
 Author: Gideon Bar
 """
-
+from wielder.util.arguer import get_wielder_parser
 from wielder.util.hocon_util import resolve_ordered
 from wielder.wield.project import get_super_project_roots, get_super_project_wield_conf
 
@@ -12,9 +12,14 @@ def project_conf():
     staging_root, super_project_root, project_name = get_super_project_roots()
     conf_path = f'{super_project_root}/pep-data/conf'
 
+    wield_parser = get_wielder_parser()
+    wield_parser.add_argument("-f", "--fff", help="a dummy argument to fool ipython", default="1")
+
     conf = get_super_project_wield_conf(
         project_conf_root=conf_path,
-        call_from_jupyter=True
+        wield_parser=wield_parser,
+        # TODO make use Module configuration without breaking
+        configure_wield_modules=False
     )
 
     return conf
