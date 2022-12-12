@@ -3,36 +3,29 @@
   {
    "text": "import com.pepticom.wielder.wild.{FsUtil, SparkContextInitializer}\nimport com.typesafe.config.Config\nimport org.apache.spark.sql.{DataFrame, SparkSession}",
    "user": "anonymous",
-   "dateUpdated": "2022-11-03T10:42:10+0000",
+   "dateUpdated": "2022-12-12T12:34:09+0000",
    "progress": 0.0,
-   "config": {},
+   "config": {
+    "editorHide": false
+   },
    "settings": {
     "params": {},
     "forms": {}
    },
-   "results": {
-    "code": "SUCCESS",
-    "msg": [
-     {
-      "type": "TEXT",
-      "data": "import com.pepticom.wielder.wild.{FsUtil, SparkContextInitializer}\nimport com.typesafe.config.Config\nimport org.apache.spark.sql.{DataFrame, SparkSession}\n"
-     }
-    ]
-   },
    "apps": [],
    "runtimeInfos": {},
    "progressUpdateIntervalMs": 500.0,
-   "jobName": "paragraph_1667472130950_971874660",
-   "id": "paragraph_1667472130950_971874660",
-   "dateCreated": "2022-11-03T10:42:10+0000",
-   "dateStarted": "2022-11-03T10:42:10+0000",
-   "dateFinished": "2022-11-03T10:42:11+0000",
+   "jobName": "paragraph_1670848449667_715215907",
+   "id": "paragraph_1670848449667_715215907",
+   "dateCreated": "2022-12-12T12:34:09+0000",
+   "dateStarted": "2022-12-12T12:34:09+0000",
+   "dateFinished": "2022-12-12T12:34:19+0000",
    "status": "FINISHED"
   },
   {
    "text": "import org.apache.spark.sql.SparkSession\nval spark = SparkSession.builder.config(sc.getConf).getOrCreate()\n\nval a = 90\n\n",
    "user": "anonymous",
-   "dateUpdated": "2022-11-03T09:46:26+0000",
+   "dateUpdated": "2022-12-12T12:22:50+0000",
    "progress": 0.0,
    "config": {
     "tableHide": true,
@@ -61,45 +54,17 @@
    "apps": [],
    "runtimeInfos": {},
    "progressUpdateIntervalMs": 500.0,
-   "jobName": "paragraph_1667468786703_405025703",
-   "id": "paragraph_1667468786703_405025703",
-   "dateCreated": "2022-11-03T09:46:26+0000",
-   "dateStarted": "2022-11-03T09:46:26+0000",
-   "dateFinished": "2022-11-03T09:46:54+0000",
+   "jobName": "paragraph_1670847770187_1156486749",
+   "id": "paragraph_1670847770187_1156486749",
+   "dateCreated": "2022-12-12T12:22:50+0000",
+   "dateStarted": "2022-12-12T12:22:50+0000",
+   "dateFinished": "2022-12-12T12:23:01+0000",
    "status": "FINISHED"
   },
   {
-   "text": "%sh /dev/peps/package_py.bash\n# TODO Makwe python work this works but does not impact the default conda interpreter.\n\n",
+   "text": "%spark.conf\nspark.jars /dev/duds/Pipelines/datalake/CassandraPipe/target/CassandraPipe-1.0.0-SNAPSHOT-jar-with-dependencies.jar,/dev/duds/Pipelines/datalake/KafkaIngestion/target/KafkaIngestion-1.0.0-SNAPSHOT-jar-with-dependencies.jar,/dev/duds/Pipelines/Wild/target/Wild-1.0.0-SNAPSHOT.jar",
    "user": "anonymous",
-   "dateUpdated": "2022-11-03T09:46:26+0000",
-   "progress": 0.0,
-   "config": {
-    "tableHide": true
-   },
-   "settings": {
-    "params": {
-     "bdtMeta": {
-      "inlay": {
-       "collapsed": true
-      }
-     }
-    },
-    "forms": {}
-   },
-   "apps": [],
-   "runtimeInfos": {},
-   "progressUpdateIntervalMs": 500.0,
-   "jobName": "paragraph_1667468786802_1820052493",
-   "id": "paragraph_1667468786802_1820052493",
-   "dateCreated": "2022-11-03T09:46:26+0000",
-   "dateStarted": "2022-11-03T09:46:26+0000",
-   "dateFinished": "2022-11-03T09:47:03+0000",
-   "status": "ABORT"
-  },
-  {
-   "text": "%python\nimport sys\nfor p in sys.path:\n    print(p)",
-   "user": "anonymous",
-   "dateUpdated": "2022-11-03T09:46:26+0000",
+   "dateUpdated": "2022-12-12T12:33:57+0000",
    "progress": 0.0,
    "config": {},
    "settings": {
@@ -109,12 +74,155 @@
    "apps": [],
    "runtimeInfos": {},
    "progressUpdateIntervalMs": 500.0,
-   "jobName": "paragraph_1667468786853_312304232",
-   "id": "paragraph_1667468786853_312304232",
-   "dateCreated": "2022-11-03T09:46:26+0000",
-   "dateStarted": "2022-11-03T09:46:26+0000",
-   "dateFinished": "2022-11-03T09:46:34+0000",
+   "jobName": "paragraph_1670848437630_627255617",
+   "id": "paragraph_1670848437630_627255617",
+   "dateCreated": "2022-12-12T12:33:57+0000",
+   "dateStarted": "2022-12-12T12:33:57+0000",
+   "dateFinished": "2022-12-12T12:33:57+0000",
    "status": "FINISHED"
+  },
+  {
+   "text": "%sh\npip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu",
+   "user": "anonymous",
+   "dateUpdated": "2022-12-12T13:40:06+0000",
+   "progress": 0.0,
+   "config": {
+    "title": false
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1670852406785_640314751",
+   "id": "paragraph_1670852406785_640314751",
+   "dateCreated": "2022-12-12T13:40:06+0000",
+   "dateStarted": "2022-12-12T13:40:06+0000",
+   "dateFinished": "2022-12-12T13:40:47+0000",
+   "status": "FINISHED",
+   "title": ""
+  },
+  {
+   "text": "%python\nimport torch\nimport math\n\n\ndtype = torch.float\ndevice = torch.device(\"cpu\")\n# device = torch.device(\"cuda:0\") # Uncomment this to run on GPU\n\n# Create random input and output data\nx = torch.linspace(-math.pi, math.pi, 2000, device=device, dtype=dtype)\ny = torch.sin(x)\n\n# Randomly initialize weights\na = torch.randn((), device=device, dtype=dtype)\nb = torch.randn((), device=device, dtype=dtype)\nc = torch.randn((), device=device, dtype=dtype)\nd = torch.randn((), device=device, dtype=dtype)\n\nlearning_rate = 1e-6\nfor t in range(2000):\n    # Forward pass: compute predicted y\n    y_pred = a + b * x + c * x ** 2 + d * x ** 3\n\n    # Compute and print loss\n    loss = (y_pred - y).pow(2).sum().item()\n    if t % 100 == 99:\n        print(t, loss)\n\n    # Backprop to compute gradients of a, b, c, d with respect to loss\n    grad_y_pred = 2.0 * (y_pred - y)\n    grad_a = grad_y_pred.sum()\n    grad_b = (grad_y_pred * x).sum()\n    grad_c = (grad_y_pred * x ** 2).sum()\n    grad_d = (grad_y_pred * x ** 3).sum()\n\n    # Update weights using gradient descent\n    a -= learning_rate * grad_a\n    b -= learning_rate * grad_b\n    c -= learning_rate * grad_c\n    d -= learning_rate * grad_d\n\n\nprint(f'Result: y = {a.item()} + {b.item()} x + {c.item()} x^2 + {d.item()} x^3')",
+   "user": "anonymous",
+   "dateUpdated": "2022-12-12T13:42:46+0000",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1670852566780_1793807463",
+   "id": "paragraph_1670852566780_1793807463",
+   "dateCreated": "2022-12-12T13:42:46+0000",
+   "dateStarted": "2022-12-12T13:42:46+0000",
+   "dateFinished": "2022-12-12T13:42:51+0000",
+   "status": "FINISHED"
+  },
+  {
+   "text": "%sh\npip install cassandra-driver kafka-python",
+   "user": "anonymous",
+   "dateUpdated": "2022-12-12T13:42:14+0000",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1670852534773_894067263",
+   "id": "paragraph_1670852534773_894067263",
+   "dateCreated": "2022-12-12T13:42:14+0000",
+   "dateStarted": "2022-12-12T13:42:14+0000",
+   "dateFinished": "2022-12-12T13:42:24+0000",
+   "status": "ERROR"
+  },
+  {
+   "text": "%python\nfrom cassandra.cluster import Cluster\nfrom cassandra.auth import PlainTextAuthProvider\n\nauth_provider = PlainTextAuthProvider(username='cassandra', password='swedish_chef')\ncluster = Cluster(['127.0.0.1'], port=30200, auth_provider=auth_provider)\nsession = cluster.connect()\n\nrow = session.execute(\"SELECT release_version FROM system.local\").one()\nif row:\n    print(row[0])\n",
+   "user": "anonymous",
+   "dateUpdated": "2022-12-12T12:30:08+0000",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1670848208837_1660386894",
+   "id": "paragraph_1670848208837_1660386894",
+   "dateCreated": "2022-12-12T12:30:08+0000",
+   "dateStarted": "2022-12-12T12:30:08+0000",
+   "dateFinished": "2022-12-12T12:30:12+0000",
+   "status": "FINISHED"
+  },
+  {
+   "text": "%python\nimport kafka\n\nconsumer = kafka.KafkaConsumer(group_id='test', bootstrap_servers=['localhost:30000', 'localhost:30001', 'localhost:30002'])\ntopics = consumer.topics()\n\nprint(topics)\n\nif not topics:\n    raise RuntimeError()",
+   "user": "anonymous",
+   "dateUpdated": "2022-12-12T12:32:32+0000",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1670848352588_2030629189",
+   "id": "paragraph_1670848352588_2030629189",
+   "dateCreated": "2022-12-12T12:32:32+0000",
+   "dateStarted": "2022-12-12T12:32:32+0000",
+   "dateFinished": "2022-12-12T12:32:32+0000",
+   "status": "FINISHED"
+  },
+  {
+   "text": "%python\nimport sys\nfor p in sys.path:\n    print(p)",
+   "user": "anonymous",
+   "dateUpdated": "2022-12-12T10:34:07+0000",
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1670841247339_-1296151286",
+   "id": "paragraph_1670841247339_-1296151286",
+   "dateCreated": "2022-12-12T10:34:07+0000",
+   "dateStarted": "2022-12-12T10:34:07+0000",
+   "dateFinished": "2022-12-12T10:34:09+0000",
+   "status": "FINISHED"
+  },
+  {
+   "text": "%jupyter(kernel=python)\nimport sys\nfor p in sys.path:\n    print(p)",
+   "user": "anonymous",
+   "dateUpdated": "2022-12-12T10:33:55+0000",
+   "config": {
+    "kernel": "python"
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1670841235291_-349265319",
+   "id": "paragraph_1670841235291_-349265319",
+   "dateCreated": "2022-12-12T10:33:55+0000",
+   "dateStarted": "2022-12-12T10:33:55+0000",
+   "dateFinished": "2022-12-12T10:33:57+0000",
+   "status": "ERROR"
   }
  ],
  "name": "Zeppelin Notebook",
