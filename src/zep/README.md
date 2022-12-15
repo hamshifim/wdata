@@ -33,3 +33,21 @@ Running JAR in Console
    import com.typesafe.config.Config
    import org.apache.spark.sql.{DataFrame, SparkSession}
 `
+
+Connect to remote Zeppelin(on AWS) from IntelliJ Idea
+=
+1. Create SSH tunnel to bastion instance(manually or using script)
+2. Open notebook or IntelliJ settings and find `Big Data Tools`
+3. Add new zeppelin notebook
+4. Copy URL from AWS console in `Applications` tab for Zeppelin, and paste to `URL` into IntelliJ
+5. In IntelliJ activate `Enable tunneling` option and click on `...`
+6. In new open window add new config
+7. Copy URL of `Master public DNS` on `Summary`(main) tab and paste as host
+8. Add username `hadoop`(it always left the same)
+9. Change `Authentication type` from Password to `Key pair OpenSSH or PuTTY`
+10. Specify path to private key file(that was created with terraform) for that EMR cluster(specific environment)
+11. In Connection parameters, activate option to `Send keep-alive messages every ... seconds` and change from 300 to 5
+12. In `HTTP/SOCKS proxy` select SOCKS proxy
+13. In hostname write `127.0.0.1`
+14. In port write `8157`(or another port, that used for tunnel)
+15. Test connection and apply
