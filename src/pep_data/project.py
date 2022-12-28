@@ -19,7 +19,8 @@ def project_conf():
         project_conf_root=conf_path,
         wield_parser=wield_parser,
         # TODO make use Module configuration without breaking
-        configure_wield_modules=False
+        configure_wield_modules=False,
+        app='data'
     )
 
     return conf
