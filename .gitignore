@@ -24,6 +24,3 @@
 *.ipynb_checkpoints
 */Downloads/*
 */jupyter/dev*
-/conf/unique_conf/
-**/developer.conf
-!example_conf/developer.conf
