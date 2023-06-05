@@ -9,3 +9,9 @@ Locally on a PC one may install packages for the specific notebook relative to w
 For more understanding:
 https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/
 
+Getting Started
+-
+Before running the scripts or SDK, follow these steps:
+
+1. Copy the default_conf subdirectory from unique_conf_example directory.
+2. Paste the copied subdirectory into the unique_conf directory.
