@@ -6,6 +6,6 @@ if __name__ == "__main__":
 
     conf = data_project_conf()
 
-    cont = get_remote_unique_context(conf)
+    remote_conf = get_remote_unique_context(conf)
 
-    print(cont)
+    print(remote_conf)
