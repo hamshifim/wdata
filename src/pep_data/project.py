@@ -8,12 +8,25 @@ from wielder.util.hocon_util import resolve_ordered
 from wielder.wield.project import get_super_project_roots, get_super_project_wield_conf
 
 
-def data_project_conf():
+def data_project_conf(runtime_env=None, config_env=None, unique_conf=None):
+    """
+    The modality of data flow in a distributed environment
+    determines evaluation of configuration according to environment
+    e.g. AWS bucket is s3:// Local bucket is $HOME/<super_repo_path>/buckets
+    :param runtime_env:
+    :param config_env:
+    :param unique_conf:
+    :return:
+    """
 
     staging_root, super_project_root, project_name = get_super_project_roots()
     conf_path = f'{super_project_root}/wdata/conf'
 
-    wield_parser = get_wielder_parser()
+    wield_parser = get_wielder_parser(
+        runtime_env=runtime_env,
+        unique_conf=unique_conf,
+        config_env=config_env
+    )
     wield_parser.add_argument("-f", "--fff", help="a dummy argument to fool ipython", default="1")
 
     conf = get_super_project_wield_conf(
