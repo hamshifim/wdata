@@ -12,6 +12,9 @@
       <excludeFolder url="file://$MODULE_DIR$/src/jupyter/Downloads" />
       <excludeFolder url="file://$MODULE_DIR$/src/jupyter/.ipynb_checkpoints" />
       <excludeFolder url="file://$MODULE_DIR$/src/Downloads" />
+      <excludeFolder url="file://$MODULE_DIR$/conf/plan" />
+      <excludeFolder url="file://$MODULE_DIR$/src/pep_data.egg-info" />
+      <excludeFolder url="file://$MODULE_DIR$/.vs" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10 (data)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
