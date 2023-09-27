@@ -20,8 +20,9 @@ from pyhocon import HOCONConverter
 
 from pep_data.project import data_project_conf
 from wielder.spark.util import set_spark_env
+from wielder.unreal.util import to_unreal, UnrealTableType
 from wielder.wield.project import default_conf_root, configure_project_module
-from wielder.spark.util import to_unreal, columns_ranges
+from wielder.spark.util import columns_ranges
 from wielder.spark.spatial import estimate_df_boundaries
 from wielder.spark.util import color_by_range
 from wielder.unreal.struct_gen import *
@@ -178,7 +179,7 @@ dest1
 # In[ ]:
 
 
-unreal_conf = to_unreal(params_df, dest1, unreal_conf, main_table, table, default_table=True)
+unreal_conf = to_unreal(params_df, dest1, unreal_conf, main_table, table, table_type=UnrealTableType.SECONDARY)
 
 
 # In[ ]:
